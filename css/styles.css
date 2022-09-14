@@ -1,0 +1,239 @@
+#title{
+  background-color: #ff4c68;
+}
+
+.navbar-brand{
+  font-size: 5rem;
+  font-family: Pacifico;
+  color: #fff;
+  padding-left: 10%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+.navbar-brand:hover{
+  font-size: 7rem;
+  font-family: Pacifico;
+  color: #fff;
+  padding-left: 10%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+.nav-item{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-right: 2%;
+}
+
+.column-t{
+  text-align: center;
+}
+
+.column-t p{
+  font-size: 2rem;
+  text-align: center;
+  font-family: Rubik Moonrocks;
+  padding-left: 30%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.column-t img{
+  background-color: #ff4c68;
+}
+
+.column-t .img-top {
+  display: none;
+  position: absolute;
+}
+
+.column-t:hover .img-top {
+  display: inline;
+}
+
+.column-fe{
+  text-align: center;
+  padding: 5%;
+}
+
+.column-fe:hover{
+background-color: #C3F8FF;
+}
+
+.column-oe{
+  text-align: center;
+  padding: 2.5%;
+}
+
+.column-oe:hover{
+background-color: #C3F8FF;
+}
+
+.row-header h1{
+  font-size: 3rem;
+  color: #ff4c68;
+  padding: 5%;
+}
+
+.row-header h1:hover{
+  font-size: 5rem;
+  color: #ff4c68;
+  padding: 5%;
+}
+
+.row-header-sentence h3{
+  color: #ff4c68;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+
+
+#skills{
+  background-color: #ff4c68;
+}
+
+.row-header-s h1{
+  text-align: center;
+  font-size: 3rem;
+  color: #fff;
+  padding: 5%;
+}
+
+.row-header-s h1:hover{
+  font-size: 5rem;
+  color: #fff;
+  padding: 5%;
+}
+
+.column-s{
+  padding: 5%;
+}
+
+.column-s:hover{
+background-color: #C3F8FF;
+}
+
+.column-s h3{
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.column-s h3:hover{
+  font-size: 1.5rem;
+  color: #ff4c68;
+}
+
+.column-s ul{
+  color: #fff;
+}
+
+.column-s ul:hover{
+  color: #ff4c68;
+  font-size: 1.2rem;
+}
+
+
+#experience{
+  background-color: #fff;
+  text-align: center;
+}
+
+.row-header-exp h1{
+  font-size: 3rem;
+  color: #ff4c68;
+  padding: 5%;
+}
+
+.row-header-exp h1:hover{
+  font-size: 5rem;
+  color: #ff4c68;
+  padding: 5%;
+}
+
+#carousel:hover{
+  background-color: #C3F8FF;
+}
+
+.carousel-item{
+  padding: 5%;
+}
+
+
+.carousel-item h3{
+  text-align: center;
+  color: #ff4c68;
+}
+
+.carousel-item h5{
+  text-align: center;;
+  color: #ff4c68;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    height: 50px;
+    width: 50px;
+    background-color: #ff4c68;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid #ff4c68;
+}
+
+.carousel-control-next-icon:hover{
+    height: 100px;
+    width: 100px;
+    background-color: #ff4c68;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid #ff4c68;
+}
+
+.carousel-control-prev-icon:hover{
+  height: 100px;
+  width: 100px;
+  background-color: #ff4c68;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid #ff4c68;
+}
+
+.carousel-indicators{
+  background-color: #ff4c68;
+  background-size: 100%, 100%;
+}
+
+.contact_me{
+  text-align: center;
+  height: 400px;
+  background-color: #ff4c68;
+}
+
+.contact_me h1{
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+  padding: 2%;
+}
+
+.contact_me h1:hover{
+  font-size: 5rem;
+  text-align: center;
+  color: #fff;
+  padding: 2%;
+}
+
+.contact_me a{
+  text-align: center;
+  color: #fff;
+  padding: 2%;
+}
+
+.contact_me p{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 2%;
+  text-align: center;
+  color: #fff;
+}
