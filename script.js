@@ -1,12 +1,3 @@
-console.log('Script loaded'); // Check if the script is loaded
-
-function toggleMenu() {
-  console.log('Menu toggled'); // Debug when menu is clicked
-
-  const navLinks = document.getElementById('nav-links');
-  navLinks.classList.toggle('active');
-}
-
 // Toggle dropdown menu visibility
 function toggleMenu() {
   const navLinks = document.getElementById('nav-links');
@@ -26,4 +17,3 @@ document.addEventListener('DOMContentLoaded', () => {
     link.addEventListener('click', closeMenu); // Close menu when clicked
   });
 });
-
