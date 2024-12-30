@@ -223,24 +223,41 @@ p {
     display: block;
   }
 
-  #nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: #111;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100%;
-    padding: 10px 0;
+#nav-links {
+  display: none;
+  flex-direction: column;
+  background-color: #111;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  padding: 10px 0;
+}
+
+/* Show dropdown menu when active */
+#nav-links.active {
+  display: flex;
+}
+
+/* Menu toggle button */
+#menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: block; /* Show hamburger icon */
   }
 
-  #nav-links a {
-    padding: 10px;
-    text-align: center;
-    display: block;
+  #nav-links {
+    display: none; /* Hide menu by default */
   }
 
   #nav-links.active {
-    display: flex;
+    display: flex; /* Show menu when active */
   }
 }
