@@ -160,6 +160,147 @@
       </div>
     </section>
 
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #141414;
+        color: white;
+        margin: 0;
+        padding: 0;
+      }
+      #endorsement-list {
+        display: flex;
+        overflow-x: scroll;
+        padding: 20px;
+        gap: 20px;
+        scroll-snap-type: x mandatory;
+      }
+      .endorsement-item {
+        background-color: #222;
+        padding: 20px;
+        border-radius: 8px;
+        width: 300px;
+        flex-shrink: 0;
+        box-sizing: border-box;
+        text-align: left;
+        scroll-snap-align: start;
+        opacity: 0.8;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+      }
+      .endorsement-item:hover {
+        transform: scale(1.05);
+        opacity: 1;
+      }
+      #add-endorsement {
+        margin-top: 20px;
+        text-align: center;
+        cursor: pointer;
+        font-size: 16px;
+        color: #e50914;
+        border: 1px solid #e50914;
+        padding: 8px 15px;
+        border-radius: 20px;
+        display: inline-block;
+        transition: background-color 0.3s;
+      }
+      #add-endorsement:hover {
+        background-color: #e50914;
+        color: white;
+      }
+      form {
+        display: none;
+        margin-top: 20px;
+        padding: 20px;
+        background: #111;
+        border: 1px solid #e50914;
+        border-radius: 8px;
+      }
+      input, textarea {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        background: #222;
+        color: white;
+      }
+      button {
+        padding: 8px 15px;
+        background-color: #e50914;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      button:hover {
+        background-color: #b30e11;
+      }
+    </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+    <section id="endorsements" class="category slider" data-aos="fade-up">
+      <h2>Endorsements</h2>
+      <div id="endorsement-list"></div>
+      <div id="add-endorsement">+ Add Endorsement</div>
+
+      <form id="endorsementForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="company">Company:</label>
+        <input type="text" id="company" name="company" required />
+
+        <label for="role">Role:</label>
+        <input type="text" id="role" name="role" required />
+
+        <label for="endorsement">Endorsement:</label>
+        <textarea id="endorsement" name="endorsement" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </div>
+
+  <script>
+    const endorsements = [];
+
+    document.getElementById('endorsementForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const formData = {
+        name: document.getElementById('name').value,
+        company: document.getElementById('company').value,
+        role: document.getElementById('role').value,
+        endorsement: document.getElementById('endorsement').value,
+      };
+
+      endorsements.push(formData);
+      displayEndorsements();
+
+      alert('Thank you for your endorsement!');
+      document.getElementById('endorsementForm').reset();
+      document.getElementById('endorsementForm').style.display = 'none';
+    });
+
+    document.getElementById('add-endorsement').addEventListener('click', function () {
+      document.getElementById('endorsementForm').style.display = 'block';
+    });
+
+    function displayEndorsements() {
+      const list = document.getElementById('endorsement-list');
+      list.innerHTML = '';
+      endorsements.forEach(item => {
+        const div = document.createElement('div');
+        div.classList.add('endorsement-item');
+        div.innerHTML = `<strong>${item.name}</strong><br><em>${item.company}, ${item.role}</em><p>${item.endorsement}</p>`;
+        list.appendChild(div);
+      });
+    }
+  </script>
+    
     <section id="contact" class="category" data-aos="fade-up">
       <h2>Contact</h2>
       <div class="item">
